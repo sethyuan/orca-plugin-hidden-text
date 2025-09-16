@@ -1,0 +1,18 @@
+.orca-inline.h {
+  border-bottom: 1px dashed var(--orca-color-text-2);
+  color: transparent;
+  position: relative;
+  transition: color 150ms ease;
+  margin-right: 1px;
+  padding: 0;
+}
+
+.orca-inline.h>* {
+  border: none;
+}
+
+.orca-inline.h:hover,
+.orca-inline.h.orca-hidden-text-editing,
+.orca-inline.h.orca-hidden-text-hovering {
+  color: inherit;
+}
