@@ -18,7 +18,7 @@ export async function load(_name: string) {
 
   if (orca.state.commands["kef.editor.formatHideText"] == null) {
     orca.commands.registerEditorCommand(
-      "core.editor.formatHideText",
+      "kef.editor.formatHideText",
       formatHideText,
       () => {},
       { label: t("Hide the selected text") },
@@ -38,7 +38,7 @@ export async function load(_name: string) {
 
 export async function unload() {
   // Clean up any resources used by the plugin here.
-  orca.commands.unregisterEditorCommand("core.editor.formatHideText")
+  orca.commands.unregisterEditorCommand("kef.editor.formatHideText")
   orca.toolbar.unregisterToolbarButton("kef.h")
   orca.themes.removeCSSResources(pluginName)
 
